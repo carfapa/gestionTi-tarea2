@@ -1,0 +1,84 @@
+
+
+/* 
+.slaider-item img{
+    height:40vh;
+} */
+
+#logo-menu{
+    border-radius: 5px;
+    /* background-color: rgb(111, 111, 216); */
+    color:rgb(111, 111, 216);
+    font-size: 25px;
+}
+.col-content-right{
+    padding:0px 0;
+    text-align: center;
+}
+
+.col-content-right img{
+    max-height: 300px;
+    margin:0 auto;
+}
+.col-content-right h2, .col-content-right p{
+    text-align: justify;
+}
+
+.none-b{
+    box-shadow: none !important;
+}
+.none-b div{
+    box-shadow: none !important;
+}
+
+
+
+/*FORM CONTACT*/
+#form-contact{
+    padding:5px 10px;
+    border: none;
+}
+
+#title-contact{
+    color: blue;
+    padding:2px;
+    text-align: center;
+}
+
+/* #form-contact input, #form-contact textarea{
+    border: none;
+    border-bottom: 1.8px solid rgba(0, 0, 0, 0.4);
+    padding:10px 0;
+    outline: none !important;
+    resize: none;
+    box-shadow: none; 
+} */
+
+#form-contact input:focus, #form-contact textarea:focus{
+    border-color:rgb(111, 111, 216);;
+}
+
+.section-maps{
+    width: 100vw;
+    height: 80vh;
+}
+
+
+/*FOOTER*/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.main {
+    flex: 1;
+}
+  
+.footer {
+    background-image: url("https://i.stack.imgur.com/AZ2Xw.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 300px;
+}
