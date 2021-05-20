@@ -67,6 +67,65 @@
         <li class="breadcrumb-item">Infotec</li>
         <li class="breadcrumb-item active">redes</li>
     </ol>
+
+
+
+    <section class="articulos" style="width:95%; margin: auto">
+
+        <div class="row">
+
+            <div class="col">
+                <img src="img/smartphone.svg" alt="" width="70%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ?</p>
+            </div>
+
+            <div class="col">
+                <img src="img/smartphone.svg" alt="" width="70%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ?</p>
+            </div>
+
+            <div class="col">
+                <img src="img/smartphone.svg" alt="" width="70%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ?</p>
+            </div>
+
+            <div class="col">
+                <img src="img/smartphone.svg" alt="" width="70%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ?</p>
+            </div>
+
+
+        </div>
+
+
+        <div class="row" >
+
+            <div class="col">
+                <img src="img/smartphone.svg" alt="" width="70%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ?</p>
+            </div>
+
+            <div class="col">
+                <img src="img/smartphone.svg" alt="" width="70%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ?</p>
+            </div>
+
+            <div class="col">
+                <img src="img/smartphone.svg" alt="" width="70%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ?</p>
+            </div>
+
+            <div class="col">
+                <img src="img/smartphone.svg" alt="" width="70%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ?</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <br><br><br><br><br><br>
     
     
 

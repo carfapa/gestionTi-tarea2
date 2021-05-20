@@ -1,3 +1,13 @@
+<?php 
+    if(isset($_POST['enviar'])){
+        $nombre = $_POST["nombre"];
+        $apellido = $_POST["apellido"];
+        $correo = $_POST["correo"];
+        $motivo = $_POST["motivo"];
+    }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +28,6 @@
     <!-- SCROLL REVEAL -->
     <script  src="https://unpkg.com/scrollreveal"> </script>
     <script src="js/main.js"></script>
-
-
     
 
 
@@ -34,27 +42,29 @@
             $('.bxslider').bxSlider({
                 mode:'fade',
                 auto:'true',
-                pause: 4000
+                pause: 3000
                 //controls:false
             });
         });
     </script>
 
-
-
-
-
-
-
-
-
+    <!-- LEAFLET Libreria para crear mapa -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"/>
+    <style> /*Añadiendo el estilo de nuestro mapa*/
+        #map{
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+    <!-- Fin añadiendo CSS -->
 
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand px-1" id="logo-menu" href="#">infotec</a>
+            <a class="navbar-brand px-1" id="logo-menu" href="#">INFOTEC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -81,12 +91,14 @@
                     </p>
                     <a href="#" class="btn  btn-outline-primary mt-2 header-btn">Read more</a>
                 </div>
+
                 <div class="col-md-6 none-b">
                     <ul class="bxslider">
                         <li class="slaider-item"><img src="img/telc2.jpg" alt="comun" width="90%"></li>
                         <li class="slaider-item">
                             <img src="img/telecomunicaciones-p.svg" alt="comun" width="90%" height="300px">
                         </li>
+                        <!--<li class="slaider-item"><img src="img/desarrollador-de-software.svg" width="90%" height="300px" alt=""> </li>-->
                     </ul>
                 </div>
             </div>
@@ -96,32 +108,22 @@
     <section style="background: rgb(233, 236, 239);">
         <div class="container py-2 pb-4">
             <h2 class=" text-center py-2">Conocé nuestros nuevos articulos</h2>
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Internet de las cosas</h5>
-                        <small>06/03/2021</small>
-                    </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small>Donec id elit non mi porta.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">actulidad de la red 5G</h5>
-                        <small class="text-muted">06/03/2021</small>
-                    </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small class="text-muted">Donec id elit non mi porta.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Inteligencia artificial</h5>
-                        <small class="text-muted">06/03/2021</small>
-                    </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small class="text-muted">Donec id elit non mi porta.</small>
-                </a>
-              </div>
+            <div class="row">
+
+                <div class="col">
+                    <img src="img/desarrollador-de-software.svg" alt="" width="75%">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, totam. </p>
+                </div>
+                <div class="col">
+                    <img src="img/desarrollador-de-software.svg" alt="" width="75%">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, dolorum. </p>
+                </div>
+                <div class="col">
+                    <img src="img/desarrollador-de-software.svg" alt="" width="75%">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, minima. </p>
+                </div>
+
+            </div>
         
         </div>
     </section>
@@ -131,27 +133,33 @@
             <div class="row">
                 <div class="col-md-6 my-auto">
                     <h2 class="my-3" id="title-contact">Contactanos</h2>
-                   <form id="form-contact" class="card">
+                   <form id="form-contact" class="card" actioon="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="text" class=" form-control" placeholder="Nombre">
+                                <input type="text" class=" form-control" placeholder="Nombre" name="nombre" value="<?php if(isset($nombre)) echo $nombre ?>">
                             </div>
                             <div class="col-md-6 form-group">
-                                    <input type="text" class=" form-control" placeholder="Apellido">
+                                    <input type="text" class=" form-control" placeholder="Apellido" name="apellido" value="<?php if(isset($apellido)) echo $apellido ?>">
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class=" form-control" placeholder="Email">
+                            <input type="text" class=" form-control" placeholder="Email" name="correo" value="<?php if(isset($correo)) echo $correo ?>">
                         </div>
                         <div class="form-group">
-                            <input type="text" class=" form-control" placeholder="Motivo">
+                            <input type="text" class=" form-control" placeholder="motivo" name="motivo" value="<?php if(isset($motivo)) echo $motivo ?>">
                         </div>
                         <div class="form-group">
                             <textarea cols="30" rows="8" class="form-control" placeholder="Mensaje"></textarea>
                         </div>
                         <div class="form-group">
-                           <button type="submit" class="form-control btn btn-outline-primary">Enviar</button>
+                            <input type="submit" class="form-control btn btn-outline-primary" name="enviar">
                         </div>
+                        <!-- <div class="form-group">
+                           <button type="submit" class="form-control btn btn-outline-primary" name="enviar">Enviar</button>
+                        </div> -->
+                        <?php
+                            include("validacionContactenos.php");
+                        ?>
                    </form>
                 </div>
                 <div class="col-md-5 m-auto">
@@ -162,9 +170,35 @@
     </section>
 
 
-    <section class="section-maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1599200156041!6m8!1m7!1skflnWaUCJS6GukWkuDAlkQ!2m2!1d5.681172901273731!2d-76.64649968198805!3f303.24294377396933!4f-1.9750417672996292!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <section id="map">
+        <script type="text/javascript">
+            let latitud;
+            let longitud;
+            navigator.geolocation.getCurrentPosition(
+                function (posicion) {
+                    latitud = posicion.coords.latitude;
+                    longitud = posicion.coords.longitude;
+                },
+                function (errors) {
+                    if(errors.code = 1){
+                        console.log(errors.code);
+                    }
+                }
+            );
+            /*18/5.68164/-76.64711*/
+            //Cargando nuestro mapa
+            var mapsipe = L.map('map').
+            setView([5.68164, -76.64711],
+                18); //[38.6202, -0.5731] es la latitud y longitud de la zona que queremos mostrar, en nuestro caso Ibi
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+                maxZoom: 10
+            }).addTo(mapsipe);
 
+            //MARCADOR1
+            var marker = L.marker([5.68164, -76.64711]).addTo(mapsipe);
+            marker.bindPopup("<b>Hola!</b><br>Esta es nuestra ubicacion.").openPopup();
+        </script>
     </section>
 
 
