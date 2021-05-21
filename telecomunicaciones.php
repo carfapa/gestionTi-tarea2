@@ -56,15 +56,21 @@
                     <li class="nav-item"><a class="nav-link" href="redes.php">Redes</a></li>
                     <li class="nav-item"><a class="nav-link" href="electronica.php">Electronica</a></li>
                     <li class="nav-item"><a class="nav-link" href="artefactos.php">Artefactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php" style="border: 1px solid blue; border-radius: 5px">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav> <!--Nabegacion-->
     <br><br><br>
-    <ol class="breadcrumb">
+
+    <!--<ol class="breadcrumb">
         <li class="breadcrumb-item">Infotec</li>
         <li class="breadcrumb-item active">telecomunicaciones</li>
-    </ol>
+    </ol>-->
+    <div>
+        <img src="img/telecom1.jpeg" alt="" width="100%" height="450px">
+    </div>
+    <br><br>
 
     <!--SECTION FOR ARTICLES -->
     <section class="articulos" style="width:95%; margin: auto">
@@ -77,11 +83,9 @@
                         <img class="card-img-top" src="https://www.fortech.ro/wp-content/uploads/2018/12/DigitalCommerceSoftwarePlatform-e1554472385425.jpg" alt="Card image cap">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment Special</h5>
-                        <div class="card-content">
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                        <h5 class="card-title">Special title treatment Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/" target="_blank" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
             </div>
@@ -93,8 +97,8 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/" target="_blank" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
             </div>
@@ -106,8 +110,8 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/" target="_blank" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
             </div>
@@ -119,8 +123,34 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p> 
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/" target="_blank" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="https://www.fortech.ro/wp-content/uploads/2018/12/DigitalCommerceSoftwarePlatform-e1554472385425.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/" target="_blank" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="https://www.fortech.ro/wp-content/uploads/2018/12/DigitalCommerceSoftwarePlatform-e1554472385425.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="https://www.teldat.com/blog/es/tendencias-telecomunicaciones-2020/" target="_blank" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
             </div>
@@ -131,16 +161,14 @@
 
     <br><br><br><br><br><br>
 
-
     <!-- Footer -->
     <footer class="bg-primary text-center text-white mt-2 py-2">
         <!-- Grid container -->
         <div class="container p-3">
-           
             <!-- Grid row -->
             <div class="row justify-content-around">
-               
-                <form action="" class="bg-primary my-auto col-md-7">
+
+                <form action="validacionSupcricion.php" class="bg-primary my-auto col-md-7">
                     <!--Grid row-->
                     <div class="row align-items-center">
                         <!--Grid column-->
@@ -152,20 +180,19 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <!-- Email input -->
-                            <input type="email" id="form5Example2" class="form-control" placeholder="email" />
+                            <input type="email" id="email" class="form-control" placeholder="email" required/>
                         </div> <br> <br>
                         <!--Grid column-->
 
                         <!--Grid column-->
                         <div class="col-md-3">
                             <!-- Submit button -->
-                            <button type="submit" class="btn btn-outline-light">Subscribe</button>
+                            <input type="submit" name="btn_subcribir" class="btn btn-outline-light" value="Subscribe">
                         </div>
                         <!--Grid column-->
                     </div>
                     <!--Grid row-->
                 </form>
-          
 
                 <!-- Section: Social media -->
                 <section class="mb-4 clas-md-5 my-auto">
@@ -180,12 +207,11 @@
                     <!-- Linkedin -->
                     <a class="btn btn-outline-light m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
                     <!-- Github -->
-                    <a class="btn btn-outline-light m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-outline-light m-1" href="https://github.com/carfapa/gestionTi-tarea2" target="_blank" role="button"><i class="fab fa-github"></i></a>
                 </section>
                 <!-- Section: Social media -->
             </div>
             <!-- endGrid row -->
-
             <br><br>
             <!-- Section: Text -->
             <section class="mb-4">
@@ -197,16 +223,16 @@
             </section>
             <!-- Section: Text -->
 
-            
+
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                 © 2021 Copyright:<a class="text-white" href="#">infotec</a>
             </div>
             <!-- Copyright -->
         </div>
-        
     </footer>
     <!-- ENDFOOTER -->
+
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->

@@ -1,4 +1,22 @@
-<?php 
+
+<?php
+
+if(isset($_POST['btn_iniciar'])){
+    $email_login = $_POST['email'];
+    $password_login = $_POST['password'];
+
+
+    if (!empty($email_login) && !empty($password_login)){
+        echo "<script>
+        alert('Te has logeado');
+    </script>";
+    }
+}
+?>
+
+
+
+<?php
     if(isset($_POST['enviar'])){
         $nombre = $_POST["nombre"];
         $apellido = $_POST["apellido"];
@@ -77,6 +95,7 @@
                     <li class="nav-item"><a class="nav-link" href="redes.php">Redes</a></li>
                     <li class="nav-item"><a class="nav-link" href="electronica.php">Electronica</a></li>
                     <li class="nav-item"><a class="nav-link" href="artefactos.php">Artefactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php" style="border: 1px solid blue; border-radius: 5px">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -94,9 +113,9 @@
 
                 <div class="col-md-6 none-b">
                     <ul class="bxslider">
-                        <li class="slaider-item"><img src="img/telc2.jpg" alt="comun" width="90%"></li>
+                        <li class="slaider-item"><img src="img/rdes1.jpeg" alt="comun" width="90%"></li>
                         <li class="slaider-item">
-                            <img src="img/telecomunicaciones-p.svg" alt="comun" width="90%" height="300px">
+                            <img src="img/telecom1.jpeg" alt="comun" width="90%" height="300px">
                         </li>
                         <!--<li class="slaider-item"><img src="img/desarrollador-de-software.svg" width="90%" height="300px" alt=""> </li>-->
                     </ul>
@@ -206,11 +225,10 @@
     <footer class="bg-primary text-center text-white mt-2 py-2">
         <!-- Grid container -->
         <div class="container p-3">
-           
             <!-- Grid row -->
             <div class="row justify-content-around">
                
-                <form action="" class="bg-primary my-auto col-md-7">
+                <form action="validacionSupcricion.php" class="bg-primary my-auto col-md-7">
                     <!--Grid row-->
                     <div class="row align-items-center">
                         <!--Grid column-->
@@ -222,14 +240,14 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <!-- Email input -->
-                            <input type="email" id="form5Example2" class="form-control" placeholder="email" />
+                            <input type="email" id="email" class="form-control" placeholder="email" required/>
                         </div> <br> <br>
                         <!--Grid column-->
 
                         <!--Grid column-->
                         <div class="col-md-3">
                             <!-- Submit button -->
-                            <button type="submit" class="btn btn-outline-light">Subscribe</button>
+                            <input type="submit" name="btn_subcribir" class="btn btn-outline-light" value="Subscribe">
                         </div>
                         <!--Grid column-->
                     </div>
@@ -249,12 +267,11 @@
                     <!-- Linkedin -->
                     <a class="btn btn-outline-light m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
                     <!-- Github -->
-                    <a class="btn btn-outline-light m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-outline-light m-1" href="https://github.com/carfapa/gestionTi-tarea2" target="_blank" role="button"><i class="fab fa-github"></i></a>
                 </section>
                 <!-- Section: Social media -->
             </div>
             <!-- endGrid row -->
-
             <br><br>
             <!-- Section: Text -->
             <section class="mb-4">
@@ -273,7 +290,6 @@
             </div>
             <!-- Copyright -->
         </div>
-        
     </footer>
     <!-- ENDFOOTER -->
 
